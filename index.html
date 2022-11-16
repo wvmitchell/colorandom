@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Hello, world!</title>
+  <title>ColoRandom</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
-  <script src="./src/main.js" defer></script>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://kit.fontawesome.com/3ecd9c70ab.js"></script>
+  <script src="src/tools.js"></script>
+  <script src="src/app.js"></script>
+  <script src="src/index.js" defer></script>
 </head>
 <body>
-  <h1>Colorandom</h1>
+  <div class="main">
+    <h1>ColoRandom</h1>
+    <div id="swatch">
+      <div class="color-square"></div>
+      <div class="color-square"></div>
+      <div class="color-square"></div>
+      <div class="color-square"></div>
+      <div class="color-square"></div>
+    </div>
+    <div class="buttons">
+      <div class="button" id="new">
+        <p>New Palette</p>
+      </div>
+      <div class="button" id="save">
+        <p>Save Palette</p>
+      </div>
+    </div>
+  </div>
+  <div class="side">
+    <h2>Saved Palettes</h2>
+    <div id="saved">
+    </div>
+  </div>
 </body>
-</html>
